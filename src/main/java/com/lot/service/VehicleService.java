@@ -9,5 +9,6 @@ public interface VehicleService {
     List<Vehicle> findAllVehicle();
 
     Vehicle save(Vehicle vehicle);
+
 }
 

@@ -1,6 +1,7 @@
 package com.lot.service;
 
 import com.lot.model.Vehicle;
+import com.lot.repository.VehicleRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class VehicleServiceImpl implements VehicleService {
 
+    VehicleRepository vehicleRepository;
 
     @Override
     public List<Vehicle> findAllVehicle() {
@@ -24,4 +26,6 @@ public class VehicleServiceImpl implements VehicleService {
     public Vehicle save(Vehicle vehicle) {
         return vehicleRepository.save(vehicle);
     }
+
+
 }
